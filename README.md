@@ -27,3 +27,6 @@ Some versions of this project also include a Project Workspace page in the class
 
 ### Credits
 Credit goes to the Udacity learning and peer sharing center where we can freely discus the codes we use and what troubles we are facing. the solutions are a mish mash of different ideas and contributions.
+
+### New Documentation
+Though there are a number of ways you can go about tackling this project, we recommend using NumPy and pandas. Using these libraries is the industry standard for working with data in Python. In the quizzes in this and the following sections, you will get some practice using NumPy and pandas to complete different parts of the project. Then for the project, you will need to piece your code together with some additional code to complete a final project! These sections will likely be helpful if you use NumPy and pandas to complete the project.
