@@ -122,7 +122,7 @@ def time_stats(df,month,day):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print('\nFinding out the most Popular stations and the trips with most people...\n')
     start_time = time.time()
 
     # TO DO: display most commonly used start station
@@ -191,12 +191,12 @@ def display_data(df):
 
     while True:
         response=['yes','no']
-        choice= input("Would you like to view individual trip data (10 entries)? Type 'yes' or 'no'\n").lower()
+        choice= input("Would you like to view individual trip data (7 entries)? Type 'yes' or 'no'\n").lower()
         if choice in response:
             if choice=='yes':
                 start=0
-                end=10
-                data = df.iloc[start:end,:10]
+                end=7
+                data = df.iloc[start:end,:7]
                 print(data)
             break
         else:
@@ -206,9 +206,9 @@ def display_data(df):
                 choice_2= input("Would you like to view more trip data? Type 'yes' or 'no'\n").lower()
                 if choice_2 in response:
                     if choice_2=='yes':
-                        start+=10
-                        end+=10
-                        data = df.iloc[start:end,:10]
+                        start+=7
+                        end+=7
+                        data = df.iloc[start:end,:7]
                         print(data)
                     else:
                         break
